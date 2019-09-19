@@ -1,6 +1,80 @@
-@import "other/mixins";
-@import "other/variables";
+@import "../other/mixins";
+@import "../other/variables";
 
 .products{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 105px;
 
+  .title {
+    width: 585px;
+    text-align: left;
+
+    p {
+      margin-top: 30px;
+      margin-bottom: 50px;
+    }
+  }
+
+  .list {
+    display: flex;
+
+    .item {
+      width: 360px;
+
+      img {
+        height: 240px;
+      }
+
+      .about {
+        .description{
+          margin-top: 15px;
+          margin-bottom: 15px;
+        }
+        h3 {
+          display: flex;
+          margin-top: 15px;
+          span {
+            display: block;
+            text-align: center;
+            width: 50%;
+            text-transform: uppercase;
+            color: $color_regular;
+            font-size: 14px;
+          }
+        }
+
+        h3:hover, a:hover {
+          color: $color_regular;
+        }
+
+        p {
+          a {
+            text-transform: uppercase;
+            color: #818492;
+            font-weight: 500;
+            font-size: 14px;
+          }
+        }
+
+        .link {
+          display: flex;
+          align-items: center;
+
+          .next {
+            display: flex;
+            background-color: $color_secondary;
+            width: 10px;
+            height: 2px;
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+
+    .item:nth-child(3n-1) {
+      margin-right: 45px;
+      margin-left: 45px;
+    }
+  }
 }

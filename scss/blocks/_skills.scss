@@ -1,0 +1,90 @@
+@import "../other/mixins";
+@import "../other/variables";
+
+
+.skills {
+  background-color: $color_bg;
+  padding-bottom: 100px;
+
+  .container {
+    .wrapper {
+      .list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .item {
+          background-color: $color_white;
+          width: 380px;
+
+          &_place {
+            padding: 70px 0 70px 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            i {
+              width: 32px;
+              height: 32px;
+              color: $color_regular;
+            }
+
+            .link {
+              display: flex;
+              align-items: center;
+              text-transform: capitalize;
+
+              p {
+                a {
+                  color: $color_regular;
+                }
+              }
+
+              .next {
+                display: flex;
+                background-color: $color_secondary;
+                width: 10px;
+                height: 2px;
+                margin-right: 5px;
+              }
+            }
+
+            h3 {
+              margin-top: 30px;
+              margin-bottom: 30px;
+
+              span {
+                color: $color_regular;
+                font-size: 12px;
+              }
+            }
+
+            .description {
+              margin-bottom: 30px;
+            }
+
+            .btn {
+              margin-top: 50px;
+              background-color: #f3f4f5;
+              color: #818492;
+              transition: 0.3s;
+            }
+            .btn:hover{
+              background-color: $color_secondary;
+              color: $color_white;
+            }
+          }
+        }
+
+        .item:nth-child(2) {
+          margin-right: 15px;
+          margin-left: 15px;
+
+          .item_place {
+            padding: 100px 0 100px 40px;
+          }
+        }
+      }
+    }
+  }
+}

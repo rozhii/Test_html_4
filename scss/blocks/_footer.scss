@@ -1,0 +1,29 @@
+@import "../other/mixins";
+@import "../other/variables";
+
+footer {
+  padding-bottom: 70px;
+
+  .container {
+    .wrapper {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      .list {
+        li {
+          padding-top: 15px;
+        }
+
+        a {
+          color: #111;
+          text-transform: capitalize;
+        }
+      }
+
+      .list:not(:first-child) {
+        margin-left: 120px;
+      }
+    }
+  }
+}

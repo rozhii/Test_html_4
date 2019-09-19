@@ -1,0 +1,70 @@
+@import "../other/mixins";
+@import "../other/variables";
+
+.services {
+  background-color: $color_bg;
+  padding-bottom: 100px;
+
+  .container {
+    .title {
+      .description {
+        width: 585px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+    }
+
+    .wrapper {
+      display: flex;
+      flex-wrap: wrap;
+
+      .item {
+        width: 388px;
+        background-color: $color_white;
+        margin-bottom: 3px;
+
+        i {
+          color: $color_regular;
+        }
+
+        .place {
+          padding: 50px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+
+          h3 {
+            margin-top: 30px;
+            margin-bottom: 30px;
+          }
+        }
+      }
+
+      .item:not(:nth-child(3n+3)) {
+        margin-right: 3px;
+      }
+
+      .item:nth-child(2) {
+        background-color: $color_secondary;
+        color: $color_white;
+
+        .place {
+          h3 {
+            color: $color_white;
+          }
+
+          i {
+            color: $color_white;
+          }
+        }
+      }
+
+      .item:hover {
+        i {
+          display: none;
+        }
+      }
+    }
+  }
+}
