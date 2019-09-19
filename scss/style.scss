@@ -1,0 +1,71 @@
+//include blocks
+@import "blocks/header";
+@import "blocks/work";
+@import "blocks/location";
+@import "blocks/products";
+@import "blocks/services";
+@import "blocks/skills";
+@import "blocks/us";
+@import "blocks/footer";
+@import "blocks/example";
+//include other
+@import "other/mixins";
+@import "other/variables";
+
+body {
+  margin: 0;
+  @include font_regular;
+  min-width: 1200px;
+}
+
+.container {
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+h2 {
+  color: $color_title;
+  text-transform: capitalize;
+  margin: 0;
+  font-size: 24px;
+}
+
+h3 {
+  color: $color_title;
+  text-transform: capitalize;
+  margin: 0;
+  font-size: 16px;
+}
+section{
+  padding-top: 100px;
+}
+.btn {
+  text-transform: uppercase;
+  padding: 15px 40px;
+  font-weight: 500;
+  width: 145px;
+  height: 50px;
+  box-sizing: border-box;
+}
+
+.description {
+  color: $color_regular;
+}

@@ -1,0 +1,102 @@
+@import "../other/mixins";
+@import "../other/variables";
+
+header {
+  background: url("../img/bg_header.jpg") no-repeat top center /cover;
+  min-height: 100vh;
+
+  hr {
+    position: absolute;
+    top: 122px;
+    background-color: #fff;
+    opacity: 0.1;
+    border: 0;
+    height: 1px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+
+      .logo {
+        margin-top: 55px;
+        color: $color_logo;
+        font-size: 48px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        line-height: 44px;
+
+        p + p {
+          position: relative;
+          top: 45px;
+        }
+      }
+
+      .menu {
+        max-width: 50%;
+        padding-top: 35px;
+        padding-bottom: 35px;
+
+        &_list {
+          display: flex;
+          justify-content: flex-end;
+          flex-wrap: wrap;
+
+          &_item {
+            margin-left: 20px;
+
+
+            &_link {
+              text-transform: uppercase;
+              color: $color_white;
+            }
+          }
+        }
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 280px 0;
+      color: $color_white;
+      align-self: flex-start;
+
+      h1 {
+        font-size: 64px;
+        text-transform: uppercase;
+        line-height: 64px;
+        margin-bottom: 45px;
+        margin-top: 0;
+      }
+
+      p {
+        max-width: 50%;
+        margin-bottom: 45px;
+      }
+
+      a {
+        border: 1px solid $color_white;
+        color: $color_white;
+        transition: 0.2s;
+      }
+
+      a:hover {
+        background-color: $color_white;
+        color: $color_title;
+      }
+    }
+  }
+}
