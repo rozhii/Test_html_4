@@ -18,10 +18,11 @@
 
   .list {
     display: flex;
-
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     .item {
       width: 360px;
-
+      margin-bottom: 30px;
       img {
         height: 240px;
       }
@@ -43,11 +44,6 @@
             font-size: 14px;
           }
         }
-
-        h3:hover, a:hover {
-          color: $color_regular;
-        }
-
         p {
           a {
             text-transform: uppercase;
@@ -60,7 +56,6 @@
         .link {
           display: flex;
           align-items: center;
-
           .next {
             display: flex;
             background-color: $color_secondary;
@@ -72,6 +67,9 @@
       }
     }
 
+    .item:hover {
+      opacity: 0.5;
+    }
     .item:nth-child(3n-1) {
       margin-right: 45px;
       margin-left: 45px;

@@ -79,12 +79,15 @@
       align-items: center;
       justify-content: center;
 
-      img {
+      .client {
         width: 190px;
       }
 
-      img:not(:first-child) {
+      .client:not(:first-child) {
         margin-left: 6px;
+      }
+      .client:hover {
+        opacity: 0.5;
       }
     }
 

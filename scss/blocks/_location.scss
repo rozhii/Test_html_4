@@ -8,9 +8,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-wrap: wrap;
       .office {
         width: 370px;
-
+        margin-bottom: 30px;
         h3 {
           display: flex;
           margin-bottom: 30px;
@@ -45,7 +46,7 @@
         }
       }
 
-      .office:not(:last-child) {
+      .office:not(:nth-child(3n+3)) {
         margin-right: 30px;
       }
     }

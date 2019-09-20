@@ -12,11 +12,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
-
+        flex-wrap: wrap;
         .item {
           background-color: $color_white;
           width: 380px;
-
+          margin-bottom: 30px;
           &_place {
             padding: 70px 0 70px 40px;
             display: flex;
@@ -76,7 +76,7 @@
           }
         }
 
-        .item:nth-child(2) {
+        .item:nth-child(3n+2) {
           margin-right: 15px;
           margin-left: 15px;
 
